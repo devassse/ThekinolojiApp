@@ -1,0 +1,277 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--clr-white);
+    background-color: var(--clr-blue-dark);
+    padding: 0.4rem 4rem;
+}
+
+header a {
+    color: var(--clr-white);
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Orbitron", sans-serif;
+}
+
+.logo img {
+    width: 4.2rem;
+}
+
+.logo h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 0.2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.4rem;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 100s ease-in-out;
+    font-family: "Orbitron", sans-serif;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid var(--clr-white);
+
+}
+
+#clickWrapper {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-icon {
+    position: absolute;
+    background-color: var(--clr-white);
+    width: 40px;
+    height: 4px;
+    margin-top: 15px;
+}
+
+.animate.mobile-menu-icon {
+    animation-name: menu-menu;
+    animation-duration: 0.3s;
+}
+
+@keyframes menu-menu {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    50% {
+        width: 0px;
+        height: 0px;
+    }
+
+    51% {
+        position: absolute;
+        background-color: var(--clr-white);
+        width: 40px;
+        height: 4px;
+    }
+}
+
+.mobile-menu-icon:after {
+    content: "";
+    position: absolute;
+    background-color: var(--clr-white);
+    width: 40px;
+    height: 4px;
+    margin-top: -10px;
+}
+
+.animate.mobile-menu-icon:after {
+    animation-name: menu-after;
+    animation-duration: 0.3s;
+}
+
+@keyframes menu-after {
+    0% {
+        transform: rotate(-45deg);
+        margin-top: 0px;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        margin-top: -10px;
+    }
+}
+
+.mobile-menu-icon:before {
+    content: "";
+    position: absolute;
+    background-color: var(--clr-white);
+    width: 40px;
+    height: 4px;
+    margin-top: 10px;
+}
+
+.animate.mobile-menu-icon:before {
+    animation-name: menu-before;
+    animation-duration: 0.3s;
+}
+
+@keyframes menu-before {
+    0% {
+        transform: rotate(45deg);
+        margin-top: 0px;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        margin-top: 10px;
+    }
+}
+
+.close {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+.close.animate {
+    animation-name: close-close;
+    animation-duration: 0.3s;
+}
+
+@keyframes close-close {
+    0% {
+        position: absolute;
+        background-color: var(--clr-white);
+        width: 40px;
+        height: 4px;
+        margin-top: 15px;
+    }
+
+    50% {
+        display: none;
+        width: 40px;
+        height: 4px;
+    }
+
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+.close:after {
+    content: "";
+    position: absolute;
+    background-color: var(--clr-white);
+    width: 40px;
+    height: 4px;
+    transform: rotate(45deg);
+}
+
+.animate.close:after {
+    animation-name: close-after;
+    animation-duration: 0.3s;
+}
+
+@keyframes close-after {
+    0% {
+        transform: rotate(0deg);
+        margin-top: 15px;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+.close:before {
+    content: "";
+    position: absolute;
+    background-color: var(--clr-white);
+    width: 40px;
+    height: 4px;
+    transform: rotate(-45deg);
+}
+
+.animate.close:before {
+    animation-name: close-before;
+    animation-duration: 0.3s;
+}
+
+@keyframes close-before {
+    0% {
+        transform: rotate(0deg);
+        margin-top: -15px;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 0.4rem 2rem;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .logo img {
+        width: 3.8rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        margin-top: 0.4rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    header {
+        padding: 0.4rem 1rem;
+    }
+}
