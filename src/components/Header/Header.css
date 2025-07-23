@@ -251,7 +251,7 @@ nav ul li a:hover {
     }
 
     .logo h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .logo img {
@@ -274,4 +274,50 @@ nav ul li a:hover {
     header {
         padding: 0.4rem 1rem;
     }
+
+    .hero-section {
+        height: 85vh;
+    }
+
+    .logo img {
+        width: 2.8rem;
+    }
+
+    .logo h1 {
+        font-size: 1.6rem;
+    }
+
+    .main-new-content {
+        padding: 0.8rem;
+    }
+
+    .main-new-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .main-new-content p {
+        font-size: 0.8rem;
+    }
+
+    .hero-new-content {
+        padding: 0.6rem;
+    }
+
+    .main-new-content a {
+        font-size: 0.6rem;
+    }
+
+    .hero-new-content h3 {
+        font-size: 0.8rem;
+    }
+
+    .hero-new-content p{
+        font-size: 0.6rem;
+    }
 }
+/* 
+@media screen and (max-width: 375px) {
+    header {
+        padding: 0.4rem 1rem;
+    }
+} */
