@@ -63,6 +63,11 @@ const Hero = () => {
                     
                 </article>
             </section>
+            <section className="adds-on-hero">
+                <div className="adds">
+                    <h4>Adds Here</h4>
+                </div>
+            </section>
         </>
     )
 }

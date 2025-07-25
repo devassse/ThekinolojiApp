@@ -243,6 +243,7 @@ nav ul li a:hover {
     }
 }
 
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
 
@@ -276,7 +277,7 @@ nav ul li a:hover {
     }
 
     .hero-section {
-        height: 85vh;
+        min-height: 85vh;
     }
 
     .logo img {
@@ -311,10 +312,11 @@ nav ul li a:hover {
         font-size: 0.8rem;
     }
 
-    .hero-new-content p{
+    .hero-new-content p {
         font-size: 0.6rem;
     }
 }
+
 /* 
 @media screen and (max-width: 375px) {
     header {
